@@ -6,9 +6,9 @@ spring:
 eureka:
     server:
         enable-self-preservation: false
-        responseCacheUpdateInvervalMs: 10000
+        responseCacheUpdateInvervalMs: 20000
         responseCacheAutoExpirationInSeconds: 60
-        eviction-interval-timer-in-ms: 10000
+        eviction-interval-timer-in-ms: 20000
     instance:
         hostname: 127.0.0.1
     client:
