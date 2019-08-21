@@ -1,4 +1,3 @@
-
 server:
    port: 8761
 spring:
@@ -10,6 +9,10 @@ eureka:
         responseCacheUpdateInvervalMs: 3000
         responseCacheAutoExpirationInSeconds: 60
         eviction-interval-timer-in-ms: 3000
+    instance:
+        preferIpAddress: true
     client:
         registerWithEureka: false
         fetchRegistry: false
+        serviceUrl:
+           defaultZone: http://127.0.0.1:${server.port}/eureka/
