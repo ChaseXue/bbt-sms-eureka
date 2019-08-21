@@ -18,4 +18,4 @@ eureka:
         registerWithEureka: true   #表示是否将自己注册到Eureka Server，默认为true。
         fetchRegistry: true  #表示是否从Eureka Server获取注册信息，默认为true。
         serviceUrl:
-           defaultZone: http://local:${server.port}/eureka/
+           defaultZone: http://localhost:${server.port}/eureka/
