@@ -3,7 +3,7 @@ server:
    port: 8761
 spring:
     application:
-        name: sms-eureka  
+        name: sms-eureka
 eureka:
     server:
         enable-self-preservation: false
@@ -12,7 +12,7 @@ eureka:
         eviction-interval-timer-in-ms: 3000
     instance:
         preferIpAddress: true
-        instance-id: ${spring.cloud.client.ipAddress}:${spring.application.name}:${server.port}
+        instance-id: 172.18.201.75:sms-eureka:8761
     client:
         registerWithEureka: true
         fetchRegistry: true
