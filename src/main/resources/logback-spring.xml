@@ -104,7 +104,7 @@
 
 	<!--分别设置对应的日志输出节点 -->
 	<root level="debug">
-	    <appender-ref ref="STDOUT" />
+	   <!--  <appender-ref ref="STDOUT" /> -->
 		<appender-ref ref="console" />
 		<appender-ref ref="app" />
 		<appender-ref ref="debug" />
