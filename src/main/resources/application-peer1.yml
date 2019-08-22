@@ -10,9 +10,9 @@ eureka:
         responseCacheAutoExpirationInSeconds: 60
         eviction-interval-timer-in-ms: 20000
     instance:
-        hostname: 127.0.0.1
+        hostname: peer1
     client:
-        registerWithEureka: false
-        fetchRegistry: false
+        registerWithEureka: true
+        fetchRegistry: true
         serviceUrl:
-           defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+           defaultZone: http://peer2:${server.port}/eureka/
