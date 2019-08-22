@@ -12,7 +12,7 @@ eureka:
         eviction-interval-timer-in-ms: 3000
     instance:
         prefer-ip-address: true
-        instance-id: ${spring.cloud.client.ipAddress}:${spring.application.name}:${server.port}
+        instance-id: ${spring.cloud.client.ip_address}:${spring.application.name}:${server.port}
     client:
         registerWithEureka: true
         fetchRegistry: true
