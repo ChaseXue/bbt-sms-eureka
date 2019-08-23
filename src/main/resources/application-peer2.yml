@@ -10,11 +10,10 @@ eureka:
     #    responseCacheAutoExpirationInSeconds: 60
     #    eviction-interval-timer-in-ms: 10000
     instance:
-        prefer-ip-address: true
-        instance-id: 106.53.83.109:${spring.application.name}:${server.port}
+        hostname: peer2
     client:
         register-with-eureka: true
         fetch-registry: true
         service-url:
-           defaultZone: http://47.106.106.190:8761/eureka/
+           defaultZone: http://peer1:8761/eureka/
             
