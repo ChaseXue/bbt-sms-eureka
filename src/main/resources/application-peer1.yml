@@ -15,4 +15,4 @@ eureka:
         register-with-eureka: true
         fetch-registry: true
         service-url:
-           defaultZone: http://peer2/eureka/
+           defaultZone: http://peer2:8761/eureka/
