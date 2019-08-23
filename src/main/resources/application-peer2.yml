@@ -4,17 +4,17 @@ spring:
     application:
         name: sms-eureka  
 eureka:
-    server:
-        enable-self-preservation: false
-        responseCacheUpdateInvervalMs: 20000
-        responseCacheAutoExpirationInSeconds: 60
-        eviction-interval-timer-in-ms: 20000
+    #server:
+    #    enable-self-preservation: true
+    #    responseCacheUpdateInvervalMs: 10000
+    #    responseCacheAutoExpirationInSeconds: 60
+    #    eviction-interval-timer-in-ms: 10000
     instance:
         prefer-ip-address: true
         instance-id: ${spring.cloud.client.ip-address}:${spring.application.name}:${server.port}
     client:
-        registerWithEureka: true
-        fetchRegistry: true
-        serviceUrl:
+        register-with-eureka: true
+        fetch-registry: true
+        service-url:
            defaultZone: http://47.106.106.190:8761/eureka/
             
