@@ -3,6 +3,7 @@ server:
 spring:
     application:
         name: sms-eureka
+
 eureka:
     #server:
     #    enable-self-preservation: true
